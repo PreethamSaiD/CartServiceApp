@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class NumberController {
 
 
-    @GetMapping("/hello")
-    public int hello(){
+        @GetMapping("/hello")
+        public int hello(){
         return (int)(Math.random()*1000);
-    }
+        }
         @GetMapping("/hello/{name}")
         public String name(@PathVariable String name){
             return "Hi "+ name+"!";
